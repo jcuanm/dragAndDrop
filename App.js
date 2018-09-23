@@ -14,72 +14,51 @@ export default class App extends Component {
 
     /* Initializing this view's state values */
     this.state = {
-      pan : [new Animated.ValueXY(), new Animated.ValueXY()]//new Animated.ValueXY()
+      pan : [],
+      panResponders : []
     };
 
-    /* Pan Handler for drag-and-drop functionality */
-    panResponder1 = PanResponder.create({
-
-      /* Indicate to OS that we want movement for this panresponder */
-      onMoveShouldSetResponderCapture: () => true,
-
-      /* Indicate to the OS that we want dragging movement */
-      onMoveShouldSetPanResponderCapture : () => true,
-
-      /* Set initial position */
-      onPanResponderGrant: (e, gestureState) => {
-        this.state.pan[0].setValue({x: 0, y: 0});
-      },
-
-      /* On movement logic */
-      onPanResponderMove : Animated.event([null,{
-        dx : this.state.pan[0].x,
-        dy : this.state.pan[0].y 
-      }]),
-
-      /* On release logic */
-      onPanResponderRelease : (e, gesture) => {
-          Animated.spring(
-            this.state.pan[0],
-            {toValue:{x:0, y:0}}
-          ).start();
-        this.state.pan[0].flattenOffset();
-        return true;
-      }
-    });
-
-    panResponder2 = PanResponder.create({
-
-      /* Indicate to OS that we want movement for this panresponder */
-      onMoveShouldSetResponderCapture: () => true,
-
-      /* Indicate to the OS that we want dragging movement */
-      onMoveShouldSetPanResponderCapture : () => true,
-
-      /* Set initial position */
-      onPanResponderGrant: (e, gestureState) => {
-        this.state.pan[1].setValue({x: 0, y: 0});
-      },
-
-      /* On movement logic */
-      onPanResponderMove : Animated.event([null,{
-        dx : this.state.pan[1].x,
-        dy : this.state.pan[1].y 
-      }]),
-
-      /* On release logic */
-      onPanResponderRelease : (e, gesture) => {
-          Animated.spring(
-            this.state.pan[1],
-            {toValue:{x:0, y:0}}
-          ).start();
-        this.state.pan[1].flattenOffset();
-        return true;
-      }
-    });
-
-    this.panResponders = [panResponder1, panResponder2];
   }
+
+    addItem = () => {
+      
+      const {pan, panResponders} = this.state;
+      const panResponder = PanResponder.create({
+
+			  /* Indicate to OS that we want movement for this panresponder */
+			  onMoveShouldSetResponderCapture: () => true,
+
+			  /* Indicate to the OS that we want dragging movement */
+			  onMoveShouldSetPanResponderCapture : () => true,
+
+			  /* Set initial position */
+			  onPanResponderGrant: (e, gestureState) => {
+				this.state.pan[this.state.pan.length - 1].setValue({x: 0, y: 0});
+			  },
+
+			  /* On movement logic */
+			  onPanResponderMove : Animated.event([null,{
+				dx : pan.length ? pan[pan.length - 1].x : 0,
+				dy : pan.length ? pan[pan.length - 1].y : 0
+			  }]),
+
+			  /* On release logic */
+			  onPanResponderRelease : (e, gesture) => {
+				  Animated.spring(
+					this.state.pan[pan.length - 1],
+					{toValue:{x:0, y:0}}
+				  ).start();
+				pan[pan.length - 1].flattenOffset();
+				return true;
+			  }
+      });
+  
+      //this.panResponders.push(panResponder);
+      this.setState({
+        pan : [...this.state.pan, new Animated.ValueXY()],
+        panResponders : [...this.state.panResponders, panResponder]
+      });
+    }
 
   render() {
     return (
@@ -87,10 +66,11 @@ export default class App extends Component {
                <View
                  style={styles.dropZone}>
                  <Text style={styles.text}>TODO List</Text>
-                 {this.state.pan.map( (pan, index) => (
-                    this.renderDraggable(pan, this.panResponders[index])
+                 {this.state.pan.length > 0 && this.state.panResponders.length > 0 && this.state.pan.map( (pan, index) => (
+                    this.renderDraggable(pan, this.state.panResponders[index])
                  ))}
                  <Button
+                   onPress={this.addItem}
                    title="Add item"
                    style={styles.addBtn}/>
                </View>

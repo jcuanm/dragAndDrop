@@ -8,6 +8,26 @@ let Window = Dimensions.get('window');
 let RECTANGLE_WIDTH = Window.width - SIDE_PADDING;
 let RECTANGLE_HEIGHT = 36;
 export default styles = StyleSheet.create({
+  wrapper: {
+  },
+  slide1: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#9DD6EB',
+  },
+  slide2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#97CAE5',
+  },
+  slide3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#92BBD9',
+  },
     dropZone    : {
         width          : RECTANGLE_WIDTH,
         height         : RECTANGLE_HEIGHT,

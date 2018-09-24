@@ -6,6 +6,7 @@ import {
     Animated,
     Button,
 } from 'react-native';
+import Swiper from 'react-native-swiper';
 import styles from './dragAndDropStyles'
 
 export default class App extends Component {
@@ -14,7 +15,7 @@ export default class App extends Component {
 
     /* Initializing this view's state values */
     this.state = {
-      pan : [],
+      pan : [new Animated.ValueXY()],
       panResponders : []
     };
 
@@ -33,13 +34,13 @@ export default class App extends Component {
 
 			  /* Set initial position */
 			  onPanResponderGrant: (e, gestureState) => {
-				this.state.pan[this.state.pan.length - 1].setValue({x: 0, y: 0});
+				this.state.pan[pan.length - 1].setValue({x: 0, y: 0});
 			  },
 
 			  /* On movement logic */
 			  onPanResponderMove : Animated.event([null,{
-				dx : pan.length ? pan[pan.length - 1].x : 0,
-				dy : pan.length ? pan[pan.length - 1].y : 0
+				dx : pan.length > 0 ? pan[pan.length - 1].x : 0,
+				dy : pan.length > 0 ? pan[pan.length - 1].y : 0
 			  }]),
 
 			  /* On release logic */
@@ -53,7 +54,6 @@ export default class App extends Component {
 			  }
       });
   
-      //this.panResponders.push(panResponder);
       this.setState({
         pan : [...this.state.pan, new Animated.ValueXY()],
         panResponders : [...this.state.panResponders, panResponder]
@@ -62,29 +62,29 @@ export default class App extends Component {
 
   render() {
     return (
-             <View>
-               <View
-                 style={styles.dropZone}>
-                 <Text style={styles.text}>TODO List</Text>
-                 {this.state.pan.length > 0 && this.state.panResponders.length > 0 && this.state.pan.map( (pan, index) => (
-                    this.renderDraggable(pan, this.state.panResponders[index])
-                 ))}
-                 <Button
-                   onPress={this.addItem}
-                   title="Add item"
-                   style={styles.addBtn}/>
-               </View>
-
-             </View>
+                 <View>
+                    <View
+                     style={styles.dropZone}>
+                       <Text style={styles.text}>TODO List</Text>
+                         {this.state.panResponders.map( (_, index) => (
+                           this.renderDraggable(this.state.pan[index], index)
+                         ))}
+                       <Button
+                        onPress={this.addItem}
+                        title="Add item"
+                        style={styles.addBtn}/>
+                   </View>
+                 </View>
     );
+
   }
 
   /* Renders the draggable item */
-  renderDraggable(pan, panResponder){
+  renderDraggable(pan,index){
         return (
-            <View style={styles.draggableContainer}>
+            <View key={index} style={styles.draggableContainer}>
                 <Animated.View 
-                    {...panResponder.panHandlers}
+                    {...this.state.panResponders[index].panHandlers}
                     style={[pan.getLayout(), styles.rectangle]}>
                     <Text style={styles.text}>This is an item</Text>
                 </Animated.View>

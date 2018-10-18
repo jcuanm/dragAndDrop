@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/008ac79ec9a419c4b8b59a87404d6c29/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

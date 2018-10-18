@@ -6,7 +6,7 @@
 <string>Apple LLVM version 9.1.0 (clang-902.0.39.2)</string>
  <key>files</key>
  <array>
-  <string>/Users/javier.cuanmartinez/dragAndDrop/node_modules/react-native/React/Base/RCTModuleMethod.mm</string>
+  <string>/Users/javier.cuanmartinez/Documents/react_native_projects/appDev/dndPrototypes/dndlibs/dragAndDrop/node_modules/react-native/React/Base/RCTModuleMethod.mm</string>
  </array>
  <key>diagnostics</key>
  <array>

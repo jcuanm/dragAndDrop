@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/javier.cuanmartinez/dragAndDrop/ios/dragAndDrop/main.m \
-  /Users/javier.cuanmartinez/dragAndDrop/ios/dragAndDrop/AppDelegate.h
+  /Users/javier.cuanmartinez/Documents/react_native_projects/appDev/dndPrototypes/dndlibs/dragAndDrop/ios/dragAndDrop/main.m \
+  /Users/javier.cuanmartinez/Documents/react_native_projects/appDev/dndPrototypes/dndlibs/dragAndDrop/ios/dragAndDrop/AppDelegate.h

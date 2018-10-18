@@ -1,0 +1,153 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/d9d6199dea7b78050fbab2629106d236/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/008ac79ec9a419c4b8b59a87404d6c29/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/eb555d518ff79eaf2654383a4fa3d29b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/48ca4acf6837b82f801368eef7e03266/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b2fa0826a2dc37a19ac00e7b853bdb20/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/fe48a7fcfcd06e07a4f783a3c69c0b48/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/acd217e28c2391194351fa34163c40e0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d10501ba25dccbef297132601e365bca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/40867adadcfa9d03adb6b3fb1823a988/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/7dd47d73db0ba4328e72b6fd0ab2707a/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/9d741519651b04b4a63741e99661b0d1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7487d921df92b9f7f761c46bfded2228/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/d6b9d7fdf27f592fe83d5ac7c73fdc58/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/0c69b261fc992101988109711ac70a2d/AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/43183b069a2891cb5abf36231574a96a/AndroidManifest.xml:1:1-3:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8d15486739038642357d9f5ae9a7476f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c21376a337255e67eef4d1b34e00fdcc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/897b1726b263c42d65692856f301bd2e/AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64c8a4fe349f9aaea1ed3e97602ef7df/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e610cd9d856c0905d537096b6e10fd2a/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:2:5-30
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/d9d6199dea7b78050fbab2629106d236/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/d9d6199dea7b78050fbab2629106d236/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:5:22-75
+application
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/d9d6199dea7b78050fbab2629106d236/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/d9d6199dea7b78050fbab2629106d236/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/0c69b261fc992101988109711ac70a2d/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/0c69b261fc992101988109711ac70a2d/AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/43183b069a2891cb5abf36231574a96a/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/43183b069a2891cb5abf36231574a96a/AndroidManifest.xml:2:3-17
+	android:label
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:8:7-38
+activity#com.draganddrop.MainActivity
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:23:7-84
+	android:name
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/d9d6199dea7b78050fbab2629106d236/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/react-native-0.57.0.aar/d9d6199dea7b78050fbab2629106d236/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/008ac79ec9a419c4b8b59a87404d6c29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/008ac79ec9a419c4b8b59a87404d6c29/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/eb555d518ff79eaf2654383a4fa3d29b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/eb555d518ff79eaf2654383a4fa3d29b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/48ca4acf6837b82f801368eef7e03266/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/48ca4acf6837b82f801368eef7e03266/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b2fa0826a2dc37a19ac00e7b853bdb20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/b2fa0826a2dc37a19ac00e7b853bdb20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/fe48a7fcfcd06e07a4f783a3c69c0b48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/fe48a7fcfcd06e07a4f783a3c69c0b48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/acd217e28c2391194351fa34163c40e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/acd217e28c2391194351fa34163c40e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d10501ba25dccbef297132601e365bca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d10501ba25dccbef297132601e365bca/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/40867adadcfa9d03adb6b3fb1823a988/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/fresco-1.10.0.aar/40867adadcfa9d03adb6b3fb1823a988/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/7dd47d73db0ba4328e72b6fd0ab2707a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.10.0.aar/7dd47d73db0ba4328e72b6fd0ab2707a/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/9d741519651b04b4a63741e99661b0d1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/drawee-1.10.0.aar/9d741519651b04b4a63741e99661b0d1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7487d921df92b9f7f761c46bfded2228/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.10.0.aar/7487d921df92b9f7f761c46bfded2228/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/d6b9d7fdf27f592fe83d5ac7c73fdc58/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.10.0.aar/d6b9d7fdf27f592fe83d5ac7c73fdc58/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/0c69b261fc992101988109711ac70a2d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/soloader-0.5.1.aar/0c69b261fc992101988109711ac70a2d/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8d15486739038642357d9f5ae9a7476f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/8d15486739038642357d9f5ae9a7476f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c21376a337255e67eef4d1b34e00fdcc/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/c21376a337255e67eef4d1b34e00fdcc/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/897b1726b263c42d65692856f301bd2e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/fbcore-1.10.0.aar/897b1726b263c42d65692856f301bd2e/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64c8a4fe349f9aaea1ed3e97602ef7df/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/64c8a4fe349f9aaea1ed3e97602ef7df/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e610cd9d856c0905d537096b6e10fd2a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /Users/javier.cuanmartinez/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/e610cd9d856c0905d537096b6e10fd2a/AndroidManifest.xml:20:5-44
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

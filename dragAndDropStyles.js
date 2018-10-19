@@ -1,5 +1,4 @@
 import { StyleSheet, 
-         Platform,
          Dimensions,
 } from 'react-native'
 
@@ -7,6 +6,7 @@ let SIDE_PADDING = 50;
 let Window = Dimensions.get('window');
 let RECTANGLE_WIDTH = Window.width - SIDE_PADDING;
 let RECTANGLE_HEIGHT = 36;
+
 export default styles = StyleSheet.create({
     dropZone    : {
         width          : RECTANGLE_WIDTH,

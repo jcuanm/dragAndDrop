@@ -14,7 +14,7 @@ class Column extends Component{
         this.state = {
             rows: []
         }
-        this.updateRows = this.updateRows;
+        this.updateRows = this.updateRows.bind(this);
     }
 
     /* Add a new row to the column */
@@ -23,6 +23,8 @@ class Column extends Component{
         const newRow = {
             index: this.state.rows.length,
             layout: layout,
+            isVisible: true,
+            coords: {x: null, y: null} // We set coords after the Row component is rendered
         }
         this.setState({
             rows : [...this.state.rows, newRow]
@@ -31,11 +33,10 @@ class Column extends Component{
 
     /* Create a callback function to allow the child components (Rows) to update the state */
     updateRows(rows){
-        this.setState({rows : rows});
+        this.setState({ rows : rows });
     }
 
     render(){
-        //console.log(this.ref1);
         return (
             <View>
                 <View style={styles.dropZone}>
@@ -47,6 +48,7 @@ class Column extends Component{
                         <Row
                             key={row.index}
                             index={row.index}
+                            isVisible={row.isVisible}
                             layout={row.layout}
                             rows={this.state.rows}
                             updateRows={this.updateRows}

@@ -9,12 +9,12 @@ import {
 class Row extends Component{
     constructor(props){
         super(props);
+        this.isActive = false;
         this.panResponder = this.setPanResponder(this.props.layout);
-        this.coords = {x: null, y: null};
     }
 
     shouldComponentUpdate(nextProps){
-        return this.props.index !== nextProps.index;
+        return (this.props.index !== nextProps.index); //&& !this.isActive;
     }
     
     setPanResponder(layout){
@@ -28,34 +28,27 @@ class Row extends Component{
 
             /* Set initial position */
             onPanResponderGrant: () => {
-                console.log("Granted", this.props.rows);
-                //this.currActiveRow = newRow;
+                console.log("Granted");
+                this.isActive = true;
                 layout.setValue({x: 0, y: 0});      
             },
 
             /* On movement logic */
             onPanResponderMove : (e, gestureState) => {
-                console.log(this.coords.x + gestureState.dx, this.coords.y + gestureState.dy);
-                // const lowerNeighbor = this.state.data[0].rows[newRow.index - 1];
+                
+                const currIndex = this.props.index;
+                const lowerNeighbor = this.props.rows[currIndex - 1];
                 // const higherNeighbor = this.state.data[0].rows[newRow.index + 1];
-                // let newYCoord = newRow.coords.y + gestureState.dy;
-                // let newXCoord = newRow.coords.x + gestureState.dx;
+                
+                let newXCoord = this.props.rows[currIndex].coords.x + gestureState.dx;
+                let newYCoord = this.props.rows[currIndex].coords.y + gestureState.dy;
+                console.log(newXCoord, newYCoord, lowerNeighbor.coords);
 
-                // if (newYCoord <= lowerNeighbor.coords.y && newXCoord == lowerNeighbor.coords.x){
-                //     newRow.setRenderStatus()
-                //     let newRowsList = this.swap(this.state.data[0].rows, newRow.index, newRow.index - 1);
-                    
-                //     let updatedData = {
-                //     id: columnId,
-                //     name: columnName,
-                //     numRows: numRows,
-                //     rows: newRowsList
-                //     }
-
-                //     this.setState({
-                //     data : [updatedData]
-                //     });
-                // }
+                if (this.shouldSwap(newXCoord, newYCoord, lowerNeighbor)){
+                    let newRowsList = this.swap(this.props.rows, currIndex,  currIndex - 1);
+                    gestureState.dy = 0;
+                    this.props.updateRows(newRowsList);
+                }
 
                 Animated.event([null,{
                         dx : layout.x,
@@ -65,11 +58,12 @@ class Row extends Component{
 
             /* On release logic */
             onPanResponderRelease : (e, gesture) => {
+                this.isActive = false;
                 this.currActiveRow = null;
-                        Animated.spring(
-                        layout,
-                        {toValue:{x:0, y:0}}
-                        ).start();
+                Animated.spring(
+                    layout,
+                    {toValue:{x:0, y:0}}
+                    ).start();
                 layout.flattenOffset();
                 return true; 
             }
@@ -79,17 +73,31 @@ class Row extends Component{
     }
 
     setCoords(x, y) {
-        this.coords.x = x;
-        this.coords.y = y;
+        this.props.rows[this.props.index].coords = {x: x, y: y};
     }
 
     /* Swap two elements from the rows list */
     swap(rowsList, index1, index2){
         console.log("Swap");
-        let temp = rowsList[index1];
+        // rowsList[index1].index = index2;
+        // rowsList[index2].index = index1;
+        // console.log(rowsList);
+
+        let tempCoords = rowsList[index1].coords;
+        rowsList[index1].coords = rowsList[index2].coords;
+        rowsList[index2].coords = tempCoords;
+        console.log(rowsList);
+        
+        let temp = rowsList[index1]
         rowsList[index1] = rowsList[index2];
         rowsList[index2] = temp;
+
+        console.log(rowsList);
         return rowsList;
+    }
+
+    shouldSwap(newXCoord, newYCoord, lowerNeighbor){
+        return newXCoord == lowerNeighbor.coords.x && newYCoord == lowerNeighbor.coords.y;
     }
 
     render(){
@@ -105,8 +113,10 @@ class Row extends Component{
             >
                 <Animated.View 
                     {...this.panResponder.panHandlers}
-                    style={[this.props.layout.getLayout(), 
-                    styles.rectangle]}
+                    style={[
+                        this.props.layout.getLayout(), 
+                        styles.rectangle
+                    ]}
                 >
                     <Text style={styles.text}>Row {this.props.index}</Text>
                 </Animated.View>

@@ -12,7 +12,6 @@ import styles from './dragAndDropStyles';
 export default class App extends Component {
   constructor(props){
     super(props);
-    //this.currActiveRow = null;
 
     /* The state's data entry will be a list of objects representing columns */
     this.state = {

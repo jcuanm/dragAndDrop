@@ -16,11 +16,10 @@ export default styles = StyleSheet.create({
         backgroundColor:'#2c3e50'
     },
     addBtn    : {
-        position       : 'relative',
         width          : RECTANGLE_WIDTH,
         height         : RECTANGLE_HEIGHT,
         top            : 0,
-        left           : Window.width/2 - RECTANGLE_WIDTH/2 - SIDE_PADDING/2,
+        left           : Window.width/2 - RECTANGLE_WIDTH/2,
         backgroundColor:'#2c3e50'
     },
     text        : {
@@ -31,7 +30,7 @@ export default styles = StyleSheet.create({
         color       : '#fff'
     },
     draggableContainer: {
-        left        : Window.width/2 - RECTANGLE_WIDTH/2 - SIDE_PADDING/2,
+        left        : Window.width/2 - RECTANGLE_WIDTH/2,
     },
     rectangle      : {
         backgroundColor     : '#1abc9c',

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		KxqMbQgypHqmuInRW37NRNwuPqY=
+		rbr92Kspj+BPbAgf5sqy35965bE=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<data>
-		SdjOzThclNXu4KLO5h40hBctROA=
+		uPxPInP5h9+ERgCm8NCXpuuMEmg=
 		</data>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<data>
-		xMkt3jnDeDc78TRXd0+2Z35KQLI=
+		aHoR6mqqp0XWLqiw49+MRuFNQLk=
 		</data>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<data>
-		PWtqWHkq/t3jE+e2ENvRUxmH79A=
+		2JoYDV6DTsckEmF+l3Ruo1S1Iqk=
 		</data>
 		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -47,7 +47,7 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/version.plist</key>
 		<data>
-		5cRzPtVUKIvxWWkMzFSgiTN1GL4=
+		DmGu9k7yBOLSfwtyNbn3zYir630=
 		</data>
 		<key>Frameworks/libXCTestBundleInject.dylib</key>
 		<data>
@@ -67,19 +67,19 @@
 		</data>
 		<key>PlugIns/dragAndDropTests.xctest.dSYM/Contents/Resources/DWARF/dragAndDropTests</key>
 		<data>
-		dmu9RvBUQ9saN37jc8djWcN078k=
+		/hrP6aqTTuD5PyPYInfLKwgrHu0=
 		</data>
 		<key>PlugIns/dragAndDropTests.xctest/Info.plist</key>
 		<data>
-		Wk3z6UCUVBo5pMVW/P7/6Xd2GoU=
+		AZ09IxOJRozFnJObtntxj7npH64=
 		</data>
 		<key>PlugIns/dragAndDropTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		xSwMGFsOZxQQljiPzuq/AjwaiPs=
+		v/2mPrSnz3DGM8RyQCIzXs27eho=
 		</data>
 		<key>PlugIns/dragAndDropTests.xctest/dragAndDropTests</key>
 		<data>
-		raYSCzynPnhN4iFiRsNoDsZ2sBU=
+		awBNozeIevOoVxpTd2dKkE2xX/0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -88,11 +88,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KxqMbQgypHqmuInRW37NRNwuPqY=
+			rbr92Kspj+BPbAgf5sqy35965bE=
 			</data>
 			<key>hash2</key>
 			<data>
-			o0Xk6lSxosK5WdNo/8N1EVuAADEO57MtLv3mCq2Z6yY=
+			5Ncx65JCKnR1CsrRpCjFI4y1w4AIwOukrrP6CAYYdls=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -143,33 +143,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SdjOzThclNXu4KLO5h40hBctROA=
+			uPxPInP5h9+ERgCm8NCXpuuMEmg=
 			</data>
 			<key>hash2</key>
 			<data>
-			2/iVpBjFB5Eb15yfj958wukO7l5pj6EewJRCoeXdZ+Q=
+			N77/gSJpnPT4ryPaR4IJ55aYyiiMCKjlq79qrCmGxU8=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xMkt3jnDeDc78TRXd0+2Z35KQLI=
+			aHoR6mqqp0XWLqiw49+MRuFNQLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			PbtcN1sDyKXVhsFpxcKSZjD2kcyQaK1dyQLcNorCDHY=
+			unqlGEn5cq6B36PWWq/mAoeeub7L9yZ3vWK7mP9EscQ=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PWtqWHkq/t3jE+e2ENvRUxmH79A=
+			2JoYDV6DTsckEmF+l3Ruo1S1Iqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6uvXQHQXgm9gxM9mblxuWfx3k/K7uR1puBprmwDR7V4=
+			OXS9XX1oATlfFoPHZbc7OGt7HUXfXzNrCz28TkkBo/g=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
@@ -189,11 +189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5cRzPtVUKIvxWWkMzFSgiTN1GL4=
+			DmGu9k7yBOLSfwtyNbn3zYir630=
 			</data>
 			<key>hash2</key>
 			<data>
-			ygI1wWTyE9+SYWsvtxZwy/ZZDORcDcIarh3Yo7p2JWY=
+			2hnwNPgdaewT28DbTqe0Gpaccdc2akBF8IjnGtISc58=
 			</data>
 		</dict>
 		<key>Frameworks/libXCTestBundleInject.dylib</key>
@@ -222,44 +222,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dmu9RvBUQ9saN37jc8djWcN078k=
+			/hrP6aqTTuD5PyPYInfLKwgrHu0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6qRwXNqNDXlwmhjdWhw4mHob6DNWZPhFVvW/fHMHmnQ=
+			7arQV00UVNtgprxvi2DFliAv6i29tNubn5txPUA3OaE=
 			</data>
 		</dict>
 		<key>PlugIns/dragAndDropTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Wk3z6UCUVBo5pMVW/P7/6Xd2GoU=
+			AZ09IxOJRozFnJObtntxj7npH64=
 			</data>
 			<key>hash2</key>
 			<data>
-			mF0xYz854I5tTKlypXL54lRBwVmVuNnCYIbncOHGhkg=
+			LlLrXfaQTzpIqEEuGcySWanlvxAO7e4iELl9JGtwB8g=
 			</data>
 		</dict>
 		<key>PlugIns/dragAndDropTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xSwMGFsOZxQQljiPzuq/AjwaiPs=
+			v/2mPrSnz3DGM8RyQCIzXs27eho=
 			</data>
 			<key>hash2</key>
 			<data>
-			cZZcjeF7mk5IxnFeu3OPvCr06g2OWY60w0kp5n3cc4k=
+			JdpruCW7z9UsB6R/9JUF8DBaat9DFpDUIRnF+NcB39k=
 			</data>
 		</dict>
 		<key>PlugIns/dragAndDropTests.xctest/dragAndDropTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			raYSCzynPnhN4iFiRsNoDsZ2sBU=
+			awBNozeIevOoVxpTd2dKkE2xX/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			CfeDBT03eUMPTLXygzcgUuWT+Ouq5/w6x5Pt6LLAh7M=
+			eW8qj1AwWRQQSYPoJYL66oP5IWzKwnXCEPYGIL7/kIE=
 			</data>
 		</dict>
 	</dict>

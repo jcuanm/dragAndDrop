@@ -6,9 +6,6 @@ import {
 } from 'react-native';
 
 class Row extends Component{
-    constructor(props){
-        super(props);
-    }
 
     /* Only re-render if we swapped the names of two items or if creating an item for the first time */
     shouldComponentUpdate(nextProps){
@@ -28,7 +25,7 @@ class Row extends Component{
                 key={this.props.index} 
                 style={styles.draggableContainer}
                 onLayout={({ nativeEvent}) => {
-                    this.props.updateCoords(this.props.name, nativeEvent.layout.x, nativeEvent.layout.y); 
+                    this.props.updateDimensions(this.props.name, nativeEvent.layout); 
                 }}
             >
                 <Animated.View 
@@ -42,8 +39,7 @@ class Row extends Component{
                 </Animated.View>
             </View>
         );
-    }
-    
+    } 
 }
 
 export default Row;

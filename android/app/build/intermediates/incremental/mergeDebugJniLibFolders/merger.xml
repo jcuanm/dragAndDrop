@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/javier.cuanmartinez/react_native_projects/dndPrototypes/dragAndDrop/android/app/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/src/debug/jniLibs"/></dataSet></merger>

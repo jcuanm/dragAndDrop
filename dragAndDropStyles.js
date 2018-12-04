@@ -8,21 +8,24 @@ let RECTANGLE_WIDTH = Window.width - SIDE_PADDING;
 let RECTANGLE_HEIGHT = 36;
 
 export default styles = StyleSheet.create({
-    dropZone    : {
+    column           : {
+        paddingRight : 10,
+    },
+    columnHeader       : {
         width          : RECTANGLE_WIDTH,
         height         : RECTANGLE_HEIGHT,
         top            : RECTANGLE_HEIGHT,
         left           : Window.width/2 - RECTANGLE_WIDTH/2,
-        backgroundColor:'#2c3e50'
+        backgroundColor:'#2c3e50',
     },
-    addBtn    : {
+    addBtn             : {
         width          : RECTANGLE_WIDTH,
         height         : RECTANGLE_HEIGHT,
         top            : 0,
         left           : Window.width/2 - RECTANGLE_WIDTH/2,
         backgroundColor:'#2c3e50'
     },
-    text        : {
+    text            : {
         marginTop   : 12,
         marginLeft  : 5,
         marginRight : 5,
@@ -30,9 +33,9 @@ export default styles = StyleSheet.create({
         color       : '#fff'
     },
     draggableContainer: {
-        left        : Window.width/2 - RECTANGLE_WIDTH/2,
+        left          : Window.width/2 - RECTANGLE_WIDTH/2,
     },
-    rectangle      : {
+    rectangle               : {
         backgroundColor     : '#1abc9c',
         width               : RECTANGLE_WIDTH,
         height              : RECTANGLE_HEIGHT,

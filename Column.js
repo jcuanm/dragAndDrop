@@ -5,20 +5,24 @@ import {
     PanResponder,
     Animated,
     Button,
+    Dimensions
 } from 'react-native';
 import Row from "./Row";
+
+const windowWidth = Dimensions.get('window').width;
 
 class Column extends Component{
     constructor(props){
         super(props);
-        this.ROW_DETECTION_XOFFSET = 100; // Used for increasing the HORIZONTAL space in which a user can swap 2 items
+        this.ROW_DETECTION_XOFFSET = 200; // Used for increasing the HORIZONTAL space in which a user can swap 2 items
         this.ROW_DETECTION_YOFFSET = 20; // Used for increasing the VERTICAL space in which a user can swap 2 items
+        this.screenEdgePositions = {left: 0, right: windowWidth}; // Keeping track of where the screen's edges are
         this.currRowsMetaData = {}; // Used to keep track of the position of the items in the list and on the screen
         this.state = {
             rows: [] // Contains the rows in the order they're presented at a given state
         }
 
-        this.updateCoords = this.updateCoords.bind(this);
+        this.updateDimensions = this.updateDimensions.bind(this);
     }
 
     /* Add a new row to the column */
@@ -29,14 +33,20 @@ class Column extends Component{
         let lowerNeighbor = (length == 0 ? null : this.state.rows[length - 1]); // Accouting for the first element in the list
        
         this.currRowsMetaData[length] = {
-            neighbors: {lower: lowerNeighbor, higher: null}, // lower == earlier position in rows list || higher == later position in rows list
-            index: length, // Index in the rows list
+            neighbors: {lower: lowerNeighbor, higher: null}, // lower == earlier position in rows list && higher == later position in rows list
+            index: length, // Index is the last index of the current rows list
             name: "Row " + name, // Unique identifier
-            coords: null // We set coords after the Row component is rendered
+
+            /* We set the following after the Row component is rendered */
+            coords: null, 
+            width: null,
+            height: null,
         }
        
         /* Handles all movement for any given row */
         const panResponder = PanResponder.create({
+            onPanResponderTerminationRequest: () => false,
+            onStartShouldSetPanResponderCapture: () => true,
 
             /* Indicate to OS that we want movement for this panresponder */
             onMoveShouldSetResponderCapture: () => true,
@@ -51,27 +61,45 @@ class Column extends Component{
                 console.log("MetaData: ", this.currRowsMetaData);
                 console.log("Rows: ", this.state.rows);
                 layout.setValue({x: 0, y: 0}); 
+                this.props.toggleScroll(true);
             },
 
             /* On movement logic */
             onPanResponderMove : (e, gestureState) => {
-
+                
                 /* Interpolate between movements */
                 Animated.event([null,{
-                    dx : layout.x,
+                    // Uncomment the below to be able to drag items across columns
+                    // WARNING: Android has difficulty dragging across columns because of inability to overlap components
+                    //dx : layout.x, 
                     dy : layout.y
                 }])(e, gestureState);
 
-                
                 let rows = this.state.rows;
                 let neighbors = this.currRowsMetaData[name].neighbors;
                 let newXCoord = this.currRowsMetaData[name].coords.x + gestureState.dx; 
                 let newYCoord = this.currRowsMetaData[name].coords.y + gestureState.dy;
-
-                /* Figoure out the direction in which we are swapping (up or down), if at all... */
-                let swapDirection = this.getSwapDirection(newXCoord, newYCoord, neighbors);
                 newRowsList = [];
+
+                /* Figure out the direction in which we are swapping (up or down). Returns null if not swapping. */
+                let swapDirection = this.getSwapDirection([newXCoord, newYCoord], neighbors); // consider just passing in the entire row object
                 
+                //console.log("Dimensions", this.currRowsMetaData[name].width, this.currRowsMetaData[name].height, this.currRowsMetaData[name]);
+                //console.log("Widths", newXCoord + this.currRowsMetaData[name].width, this.screenEdgePositions.right);
+
+                // if(newXCoord + this.currRowsMetaData[name].width >= this.screenEdgePositions.right){
+                //     this.props.scroll(newXCoord, newYCoord);
+                //     gestureState.dx += 120;
+                //     this.screenEdgePositions.right += 150;
+                //     this.screenEdgePositions.left += 150;
+                // }
+                // else if(newXCoord + this.currRowsMetaData[name].width <= this.screenEdgePositions.left){
+                //     this.props.scroll(newXCoord, newYCoord);
+                //     gestureState.dx -= 120;
+                //     this.screenEdgePositions.right += 150;
+                //     this.screenEdgePositions.left += 150;
+                // }
+
                 if(swapDirection == "lower"){
                     newRowsList = this.swapItems(rows, this.currRowsMetaData, this.currRowsMetaData[name].neighbors.lower.name, name);
                     gestureState.dy = 0;
@@ -92,6 +120,7 @@ class Column extends Component{
                     {toValue:{x:0, y:0}}
                 ).start();
                 layout.flattenOffset();
+                this.props.toggleScroll(false);
                 return true; 
             }
         });
@@ -116,12 +145,21 @@ class Column extends Component{
 
     /* Swapping items within the day column */
     swapItems(itemsList, metaData, currName, neighborName){
-        console.log("Swapped", currName, neighborName);
         
         /* Swapping screen coordinates */
         let tempCoords = metaData[currName].coords;
         metaData[currName].coords = metaData[neighborName].coords;
         metaData[neighborName].coords = tempCoords;
+
+        /* Swapping width */
+        let tempWidth = metaData[currName].width;
+        metaData[currName].width = metaData[neighborName].width;
+        metaData[neighborName].width = tempWidth;
+
+        /* Swapping height */
+        let tempHeight = metaData[currName].height;
+        metaData[currName].height = metaData[neighborName].height;
+        metaData[neighborName].height = tempHeight;
 
         /* Checking if we're swapping an item from the END of the list */
         if(metaData[neighborName].neighbors.higher){
@@ -155,9 +193,11 @@ class Column extends Component{
     }
 
     /* Return the direction in which we are swapping based on coordinates. Return null if not swapping */
-    getSwapDirection(newXCoord, newYCoord, neighbors){
-        let lowerStatus = this.shouldSwapLower(newXCoord, newYCoord, neighbors, this.currRowsMetaData);
-        let higherStatus = this.shouldSwapHigher(newXCoord, newYCoord, neighbors, this.currRowsMetaData);
+    getSwapDirection(coords, neighbors){
+        const xCoord = coords[0];
+        const yCoord = coords[1];
+        let lowerStatus = this.shouldSwapLower([xCoord, yCoord], neighbors, this.currRowsMetaData);
+        let higherStatus = this.shouldSwapHigher([xCoord, yCoord], neighbors, this.currRowsMetaData);
 
         if (lowerStatus != null){
             return lowerStatus;
@@ -171,13 +211,15 @@ class Column extends Component{
     }
 
     /* Checks if we are swapping with an earlier item in the list */
-    shouldSwapLower(newXCoord, newYCoord, neighbors, metaData){
+    shouldSwapLower(coords, neighbors, metaData){
+        const xCoord = coords[0];
+        const yCoord = coords[1];
         if (
             neighbors.lower &&
-            newXCoord >= metaData[neighbors.lower.name].coords.x - this.ROW_DETECTION_XOFFSET && 
-            newXCoord < metaData[neighbors.lower.name].coords.x + this.ROW_DETECTION_XOFFSET &&
-            newYCoord <= metaData[neighbors.lower.name].coords.y && 
-            newYCoord > metaData[neighbors.lower.name].coords.y - this.ROW_DETECTION_YOFFSET
+            xCoord >= metaData[neighbors.lower.name].coords.x - this.ROW_DETECTION_XOFFSET && 
+            xCoord < metaData[neighbors.lower.name].coords.x + this.ROW_DETECTION_XOFFSET &&
+            yCoord <= metaData[neighbors.lower.name].coords.y && 
+            yCoord > metaData[neighbors.lower.name].coords.y - this.ROW_DETECTION_YOFFSET
         ){
             return "lower";
         }
@@ -186,13 +228,15 @@ class Column extends Component{
     }
 
     /* Checks if we are swapping with a later item in the list */
-    shouldSwapHigher(newXCoord, newYCoord, neighbors, metaData){
+    shouldSwapHigher(coords, neighbors, metaData){
+        const xCoord = coords[0];
+        const yCoord = coords[1];
         if (
             neighbors.higher &&
-            newXCoord >= metaData[neighbors.higher.name].coords.x - this.ROW_DETECTION_XOFFSET && 
-            newXCoord < metaData[neighbors.higher.name].coords.x + this.ROW_DETECTION_XOFFSET &&
-            newYCoord >= metaData[neighbors.higher.name].coords.y && 
-            newYCoord < metaData[neighbors.higher.name].coords.y + this.ROW_DETECTION_YOFFSET
+            xCoord >= metaData[neighbors.higher.name].coords.x - this.ROW_DETECTION_XOFFSET && 
+            xCoord < metaData[neighbors.higher.name].coords.x + this.ROW_DETECTION_XOFFSET &&
+            yCoord >= metaData[neighbors.higher.name].coords.y && 
+            yCoord < metaData[neighbors.higher.name].coords.y + this.ROW_DETECTION_YOFFSET
         ){
             return "higher";
         }
@@ -201,38 +245,39 @@ class Column extends Component{
     }
 
     /* Create a callback function to allow the child components (Rows) to update the coordinates */
-    updateCoords(name, x, y){
-        this.currRowsMetaData[name].coords = {x:x, y:y};
+    updateDimensions(name, layout){
+        this.currRowsMetaData[name].width = layout.width;
+        this.currRowsMetaData[name].height = layout.height;
+        this.currRowsMetaData[name].coords = {x:layout.x, y:layout.y};
     }
 
     render(){
         return (
-            <View>
-                <View style={styles.dropZone}>
+            <View style={styles.column}>
+                <View style={styles.columnHeader}>
                     <Text style={styles.text}>
-                        Day 1
+                        {this.props.name}
                     </Text> 
                 </View>
 
-                <View style={styles.dropZone}>
-                </View>
+                {/* Used to create better spacing between the actual header and the items */}
+                <View style={styles.columnHeader}></View>
 
                 {this.state.rows.map( row => ( 
                     
-                        <Row
-                            key={row.index}
-                            index={row.index}
-                            name={row.name}
-                            layout={row.layout}
-                            rows={this.state.rows}
-                            updateCoords={this.updateCoords}
-                            panResponder={row.panResponder}
-                            lowerNeighbor={row.lowerNeighbor}
-                        />
-                    
+                    <Row
+                        key={row.index}
+                        index={row.index}
+                        name={row.name}
+                        layout={row.layout}
+                        rows={this.state.rows}
+                        updateDimensions={this.updateDimensions}
+                        panResponder={row.panResponder}
+                        lowerNeighbor={row.lowerNeighbor}
+                    />
+        
                 ))}
                
-
                 <View style={styles.addBtn}>
                     <Button
                         onPress={() => { this.addRow() }}

@@ -6,62 +6,62 @@
     density="420dpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1543854394134"
+    timestamp="1545144327086"
     token="-881490633359646709"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="714" />
+        duration="496" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="158" />
+        duration="0" />
     <task
         name="verifier"
-        duration="124" />
+        duration="0" />
 
     <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-    <artifact
         location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
     <artifact
         location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
     <artifact
         location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
         location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
+    <artifact
+        location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
     <artifact
         location="/Users/javier.cuanmartinez/Documents/react_native_projects/appDev/dndPrototypes/dndlibs/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
@@ -131,47 +131,47 @@
 
     <build
         build-mode="FULL"
-        timestamp="1543854394134"
+        timestamp="1545144327086"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
             location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
+        <artifact
+            location="/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/javier.cuanmartinez/Documents/react_native_projects/appDev/dndPrototypes/dndlibs/dragAndDrop/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />

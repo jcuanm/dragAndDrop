@@ -1,4 +1,4 @@
-#Mon Dec 03 11:46:57 EST 2018
-base.0=/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/transforms/dexMerger/debug/18
+#Tue Dec 18 09:46:17 EST 2018
+base.0=/Users/javier.cuanmartinez/Documents/360_projects/react_native_projects/appDev/dndPrototypes/dragAndDrop/android/app/build/intermediates/transforms/dexMerger/debug/75
 renamed.0=classes.dex
 path.0=classes.dex

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragAndDrop.iml" filepath="$PROJECT_DIR$/dragAndDrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-view-overflow/android/react-native-view-overflow.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-view-overflow/android/react-native-view-overflow.iml" />
     </modules>
   </component>
 </project>
